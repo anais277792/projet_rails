@@ -11,7 +11,7 @@ Patient.destroy_all
 Appointment.destroy_all
 
 20.times do 
-    doctor = Doctor.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, specialty: Faker::Cannabis.medical_use , zip_code: Faker::Address.zip_code)
+    doctor = Doctor.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name , zip_code: Faker::Address.zip_code)
     patient = Patient.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
     
 end
@@ -21,7 +21,7 @@ end
 end
 
 20.times do
-    specialty = Specialty.create(name: "blablabla")
+    specialty = Specialty.create(name: Faker::Cannabis.medical_use)
 end
 
 20.times do 
