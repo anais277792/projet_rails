@@ -21,7 +21,7 @@ end
 end
 
 20.times do
-    specialty = Specialty.create(name: Faker::Cannabis.medical_use)
+    specialty = Specialty.create(name: "blablabla")
 end
 
 20.times do 
